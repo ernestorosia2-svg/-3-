@@ -11,6 +11,17 @@ export interface AnalysisState {
   error: string | null;
 }
 
+export interface Message {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
+export interface NoteAnalysis {
+  weakness: string;
+  suggestion: string;
+  practiceProblem: string;
+}
+
 export interface GenerationConfig {
   chapter: Chapter;
 }
